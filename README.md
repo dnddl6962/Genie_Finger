@@ -1,11 +1,11 @@
-**# 코트와 패딩 - Genie Finger**
+# 코트와 패딩 - Genie Finger
 
 <details>
 <summary>🖥 <b>commit log</b></summary><br>
   
-**### Team Name - 코트와 패딩**
-**### Project Name - Genie Finger**
-**### Team Member & R&R**
+### Team Name - 코트와 패딩
+### Project Name - Genie Finger
+### Team Member & R&R
 
 
 <table>

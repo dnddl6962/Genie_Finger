@@ -4,13 +4,6 @@
 ### Major - Arabic
 ### Now - 
 
-<h3 align="left">👩‍💻 My Github Stats 👩‍💻</h3>
-<a href="s">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dony1220&layout=compact&theme=tokyonight"/>
-</a>
-<a href="s">
-  <img src="https://github-readme-stats.vercel.app/api?username=dony1220&theme=tokyonight&show_icons=true" width="42%"/>
-</a>
 
 
 <h3 align="left"><b>🛠 Recently Used Tool/Stack 🛠</b></h3>

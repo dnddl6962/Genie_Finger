@@ -1,4 +1,7 @@
+# 코트와 패딩 - Genie Finger
 
+<details>
+<summary>🖥 <b>commit log</b></summary><br>
 
 ### Project Name - 
 ### Major - Arabic

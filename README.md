@@ -6,7 +6,7 @@
 
 
 
-<h3 align="left"><b>🛠 Recently Used Tool/Stack 🛠</b></h3>
+<h3 align="left"><b>🛠 Used Tool/Stack 🛠</b></h3>
 </br>
 <p align="left">
 

@@ -81,7 +81,7 @@
 
 - - -
 ## 📃 소개
-<p align="center">
+<p align="left">
   <img src="https://github.com/dnddl6962/flask/assets/96913965/0af57721-4025-4458-9333-cb2df39dabb8" width = "630px">
 </p>
 

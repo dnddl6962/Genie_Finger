@@ -52,7 +52,9 @@
     <br />
     </td>    
     <br />
-    </td>    
+    </td>
+    <br />
+    <br />
   </tr>
 </table>
 

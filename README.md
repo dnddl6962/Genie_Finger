@@ -5,6 +5,7 @@
   
 ### Team Name - 코트와 패딩
 ### Project Name - Genie Finger
+### Team Member & R&R
 
 <table>
   <tr>
@@ -14,7 +15,7 @@
     <br />
     <sub>
     <b>권홍준</b><br>
-    <b> :bulb: PM, 데이터 수집 및 가공</b>
+    <b> :bulb: PM 및 컨텐츠 개발</b>
     </sub>
     </a>
     <br />
@@ -24,7 +25,7 @@
     <br />
     <sub>
     <b>김도현</b><br>
-    <b> :mag: 데이터 수집 및 가공, 로그 파일 연동</b>
+    <b> :mag: 컨텐츠 개발 및 웹 개발</b>
     </sub>
     </a>
     <td align="center">
@@ -33,7 +34,7 @@
     <br />
     <sub>
     <b>장 웅</b><br>
-    <b>🌟 모델링</b>
+    <b>🌟 웹 개발 및 컨텐츠 개발, 로그 연동</b>
     </sub>
     </a>
     <br />
@@ -44,7 +45,7 @@
     <br />
     <sub>
     <b>최태영</b><br>
-    <b>🌟 모델링</b>
+    <b>🌟 컨텐츠 개발 및 코드 정제</b>
     </sub>
     </a>
     <br />

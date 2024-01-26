@@ -107,7 +107,7 @@ def thinking_power2_video_feed():
     app.logger.info(f'[{request.method}] {request.path}')
     return Response(generate_maze_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-PORT = 5001
+PORT = 5000
 
 if __name__ == '__main__':
     app.logger.info("server on :: PORT="+str(PORT))

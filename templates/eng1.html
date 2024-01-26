@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Genie Finger - Eng1</title>
+    <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'yg-jalnan', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            margin-bottom: 20px; /* 바닥 여백 추가 */
+        }
+
+        h1 {
+            font-family: 'yg-jalnan', sans-serif;
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            margin-top: 300px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px; /* 오른쪽 마진을 조절할 값 */
+            margin-left: 100px; /* 왼쪽 마진을 조절할 값 */
+            margin-top: 0px; /* 위쪽 마진을 조절할 값 */
+            margin-bottom: 20px; /* 아래쪽 마진을 조절할 값 */
+        }
+
+        .quiz-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 20px; /* 아래쪽 마진을 조절할 값 */
+            position: relative;
+        }
+
+        img.view,
+        video.view,
+        .quiz-container img.view {
+            width: 125%; /* 크기를 더 키우기 */
+            height: 125%;
+            max-width: 200%;
+            max-height: 100%;
+            margin-top: 10px;
+        }
+
+        .quiz-container img.view {
+            width: 70%;
+            max-width: none;
+        }
+
+        .quiz-container div {
+            margin-top: 20px;
+            text-align: center;
+            width: 70%; /* 입력 폼 등의 너비 조절 */
+        }
+
+        .result-text {
+            margin-top: 20px;
+            width: 70%; /* 입력 폼 등의 너비 조절 */
+            white-space: nowrap; /* 텍스트가 한 줄로만 표시되도록 설정 */
+        }
+
+        #allCorrectMessage {
+            font-size: 40px;
+            color: white;
+        }
+
+        details {
+            width: 100%;
+            margin-top: 0px;
+            text-align: left;
+            margin-bottom: 0px; /* 바닥 여백 추가 */
+        }
+        footer {
+            margin-top: -50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>이미지 맞히기</h1>
+
+    <div class="container">
+
+        <!-- Video Feed -->
+        <div class="video-container">
+            <img class="view" src="{{ url_for('english1_video_feed') }}" alt="English Quiz1 Video Feed">
+        </div>
+
+        <!-- Quiz Image -->
+        <div class="quiz-container">
+            <img id="quizImage" class="view" src="{{ url_for('static', filename='1.png') }}" alt="English Quiz1 Image">
+
+            <!-- English quiz code starts here -->
+            <form onsubmit="checkAnswer(event)">
+                <p class="result-text" id="resultText"></p>
+                <input id="answerInput" type="text" placeholder="정답을 적어주세요." required="required" autocomplete="off">
+                <button type="submit">ENTER</button>
+                <p id="allCorrectMessage" class="result-text"></p>
+            </form>
+        </div>
+    </div>
+
+    <details>
+        <summary role="button">설명서</summary>
+        <ul>
+            <li>오른쪽 문제 ‘정답을 적어주세요’ 에 커서를 넣고, 영어가 나오는지 확인해주세요.</li>
+            <li>왼쪽 가상 키보드는 검지 손가락을 인식합니다. 왼손, 오른손 둘 중 하나를 선택해주세요.</li>
+            <li>입력하고 싶은 알파벳에 검지 손가락을 갖다대면 입력됩니다.</li>
+            <li>전부 입력했으면 Enter를 누르고, 한 글자를 지우고 싶다면 Delete를 눌러주세요.</li>
+            <li>문제는 총 3문제이며, 수학이나 사고력 문제를 풀고 싶다면 뒤로 가기를 눌러 이용해주세요.</li>
+        </ul>
+    </details>
+
+    <footer>
+        <a href="/english" role="button">뒤로가기</a>
+    </footer>
+
+    <script>
+        // 정답 이미지들의 경로
+        const images = [
+            '{{ url_for('static', filename='1.png') }}',
+            '{{ url_for('static', filename='2.png') }}',
+            '{{ url_for('static', filename='3.png') }}'
+        ];
+        let currentImageIndex = 0;
+
+        function checkAnswer(event) {
+            event.preventDefault();
+            const answerInput = document.getElementById('answerInput');
+            const resultText = document.getElementById('resultText');
+            const allCorrectMessage = document.getElementById('allCorrectMessage');
+            const quizImage = document.getElementById('quizImage');
+
+            // 사용자가 입력한 정답을 확인 (대소문자 무시)
+            const correctAnswer = getCorrectAnswer(currentImageIndex);
+            const userAnswer = answerInput.value.trim().toLowerCase();
+
+            if (userAnswer === correctAnswer) {
+                resultText.textContent = '정답입니다! 다음 문제입니다.';
+                resultText.style.color = 'green'; // 정답일 경우 텍스트 색상을 녹색으로 설정
+
+                // 다음 이미지로 이동하거나 모든 문제를 맞춘 메시지를 표시
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                if (currentImageIndex === 0) {
+                    // 모든 문제를 정답으로 맞춘 경우
+                    resultText.style.display = 'none';
+                    allCorrectMessage.textContent = '모든 문제를 완료했습니다! 👏';
+                    allCorrectMessage.style.display = 'block';
+                    // 퀴즈 이미지를 감추거나 제거해도 됩니다.
+                    quizImage.style.display = 'none';
+                } else {
+                    // 다음 이미지 표시
+                    quizImage.src = images[currentImageIndex];
+                }
+            } else {
+                resultText.textContent = '오답입니다! 다시 도전해보세요!';
+                resultText.style.color = 'red'; // 오답일 경우 텍스트 색상을 빨강으로 설정
+            }
+
+            // 입력 필드 초기화
+            answerInput.value = '';
+        }
+
+        function getCorrectAnswer(index) {
+            // 각 이미지에 대한 정답 정의 (대소문자 무시)
+            const correctAnswers = ['cat', 'act', 'car'];
+            return correctAnswers[index];
+        }
+    </script>
+
+</body>
+
+</html>

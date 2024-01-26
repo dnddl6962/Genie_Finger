@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Genie Finger - Math</title>
+    <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1{
+            font-family: 'yg-jalnan', sans-serif;
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;  
+        }
+        body {
+            font-family: 'yg-jalnan', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>덧셈/뺄셈</h1>
+    <main class="container">
+ 
+        <img class="view" src="{{ url_for('math_video_feed') }}" alt="Math Quiz Video Feed" style="width: 100%; max-width: 1700px;">
+        <details>
+            <summary role="button">설명서</summary>
+            <ul>
+                <li>이 프로그램은 검지 손가락을 인식합니다. 왼손, 오른손 둘 중 하나를 선택해주세요.</li>
+                <li>웹캠 왼쪽 상단의 문제를 보고, 검지 손가락이 인식된 원 부분으로 화면에 떠있는 1부터 20을 선택하여 진행합니다.</li>
+                <li>틀린 답을 선택하면 다음 문제로 넘어가지 않으며 현재 선택한 숫자를 화면에서 볼 수 있습니다.</li>
+                <li>문제는 총 10문제이며, 10문제를 풀면 프로그램이 끝납니다. 다시 시도하려면 새로고침을 눌러서 새로 진행할 수 있습니다.</li>
+                <li>영어나 사고력 문제를 풀고 싶다면 <strong>뒤로 가기</strong>를 눌러 이용해주세요.</li>
+            </ul>
+        </details>
+        <footer>
+            <a href="/index" role="button">뒤로가기</a>
+        </footer>
+    </main>
+   
+</body>
+
+</html>

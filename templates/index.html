@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genie Finger - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1{
+            font-family: 'yg-jalnan', sans-serif;
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;  
+        }
+        body {
+            font-family: 'yg-jalnan', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        main {
+            text-align: center;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+            margin-top: 20px; /* 이미지 위에 여백 추가 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Genie Finger</h1>
+    <main class="container">
+        <details role="list">
+            <summary aria-haspopup="listbox" role="button">
+                과목을 선택하세요.
+            </summary>
+            <ul role="listbox">
+                <li><a href="math" role="button" class="outline">수학</a></li>
+                <li><a href="english" role="button" class="secondary outline">영어</a></li>
+                <li><a href="thinking_power" role="button" class="contrast outline">사고력</a></li>
+            </ul>
+        </details>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="로고">
+    </main>
+</body>
+
+</html>

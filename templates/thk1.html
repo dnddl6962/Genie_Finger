@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Genie Finger - Math</title>
+    <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1{
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            font-family: 'yg-jalnan', sans-serif;
+            margin: 0;
+            padding: 20px;  
+        }
+        body {
+            font-family: 'yg-jalnan', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>햄버거 만들기</h1>
+    <main class="container">
+        <a href="{{ url_for('thk1') }}"><button>새로고침</button></a>
+ 
+        <img class="view" src="{{ url_for('thinking_power1_video_feed') }}" alt="Make Hamburger Video Feed" style="width: 100%; max-width: 1700px;">
+        <details>
+            <summary role="button">설명서</summary>
+            <ul>
+                <li>이 프로그램은 엄지, 검지, 중지 손가락을 이용합니다.</li>
+                <li>아래 손 이미지처럼 자세를 취해주세요.</li>
+                <img src="{{ url_for('static', filename='hamhand.png') }}" alt="햄버거 손">
+                <li>웹캠 상단에 햄버거 재료들을 집어서 접시 위에 올려주세요.</li>
+                <li>레시피 : 빵(밑) -> 상추 -> 토마토 -> 피클 -> 고기패티 -> 치즈 -> 빵(위)</li>
+                <li>레시피대로 맛있는 햄버거를 만들어주세요.</li>
+                <li>자유롭게 본인만의 햄버거를 만들어도 좋아요!</li>
+            </ul>
+        </details>
+        <footer>
+            <a href="/thinking_power" role="button">뒤로가기</a>
+        </footer>
+    </main>
+   
+</body>
+
+</html>

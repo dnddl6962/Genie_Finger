@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Genie Finger - Eng1</title>
+    <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'yg-jalnan', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            margin-bottom: 20px; /* 바닥 여백 추가 */
+        }
+
+        h1 {
+            font-family: 'yg-jalnan', sans-serif;
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px; /* 오른쪽 마진을 조절할 값 */
+            margin-left: 10px; /* 왼쪽 마진을 조절할 값 */
+            margin-top: 0px; /* 위쪽 마진을 조절할 값 */
+            margin-bottom: 20px; /* 아래쪽 마진을 조절할 값 */
+        }
+
+        video.view {
+            width: 85%; /* 크기를 더 키우기 */
+            height: 85%;
+            max-width: 200%;
+            max-height: 100%;
+            margin-top: 10px;
+        }
+
+        details {
+            width: 100%;
+            margin-top: 0px;
+            text-align: left;
+            margin-bottom: 0px; /* 바닥 여백 추가 */
+        }
+
+        footer {
+            margin-top: -50px;
+        }
+
+        .maze-container {
+            display: grid;
+            grid-template-columns: repeat(5, 130px);
+            gap: 5px;
+        }
+
+        .maze-cell {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 50px;
+            border: 2px solid yellow;
+        }
+
+        .wall {
+            background-color: #18191a;
+        }
+
+        .path {
+            background-color: #ffffff;
+        }
+
+        .start {
+            background-color: #10b981;
+        }
+
+        .star {
+            background-color: #e5f50a;
+        }
+
+        .goal {
+            background-color: #3b82f6;
+        }
+
+        .player {
+            background-color: #e72323;
+        }
+
+        #message {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .success-message {
+            color: green; /* Change the color as needed */
+        }
+
+        .failure-message {
+            color: orange; /* Change the color as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>미로 찾기</h1>
+
+    <div class="container">
+
+        <!-- Video Feed -->
+        <div class="video-container">
+            <img class="view" src="{{ url_for('thinking_power2_video_feed') }}" alt="Maze Video Feed">
+        </div>
+
+        <div class="row">
+            <div class="min-h-screen flex flex-col items-center justify-center">
+                <div id="maze" class="maze-container">
+                </div>
+                <p id="message" class="text-2xl font-bold mt-4"></p>
+            </div>
+        </div>
+    </div>
+
+    <details>
+        <summary role="button">설명서</summary>
+        <ul>
+            <li>먼저 두 손을 화면에 인식시켜주세요.</li>
+            <li>동작은 한손만 인식합니다. 만약 오른손 동작을 한다면 왼손은 주먹을 쥐어주세요.</li>
+            <li>노란색 상자가 포인트입니다.</li>
+            <li>파란색 상자가 도착 목표입니다.</li>
+            <li>빨간색 상자를 움직여 목표에 도착하면 게임은 끝나요.</li>
+            <li>포인트를 얻지 않아도 목표에 도착할 수 있어요.</li>
+            <li>오른손 검지만 들기: 오른쪽으로 이동</li>
+            <p style="width:50%;height:50%;float:left;overflow:hidden;">
+                <img alt="1" src="{{ url_for('static', filename='왼손 주먹.png') }}">
+            </p>
+            <p style="width:50%;height:50%;overflow:hidden;">
+                <img alt="2" src="{{ url_for('static', filename='오른손 1개.png') }}">
+            </p>
+            <li>오른손 검지와 중지 같이 들기: 위쪽으로 이동</li>
+            <p style="width:50%;height:50%;float:left;overflow:hidden;">
+                <img alt="3" src="{{ url_for('static', filename='왼손 주먹.png') }}">
+            </p>
+            <p style="width:50%;height:50%;overflow:hidden;">
+                <img alt="4" src="{{ url_for('static', filename='오른손 2개.png') }}">
+            </p>
+            <li>왼손 검지만 들기: 왼쪽으로 이동</li>
+            <p style="width:50%;height:50%;float:left;overflow:hidden;">
+                <img alt="1" src="{{ url_for('static', filename='왼손 1개.png') }}">
+            </p>
+            <p style="width:50%;height:50%;overflow:hidden;">
+                <img alt="2" src="{{ url_for('static', filename='오른손 주먹.png') }}">
+            </p>
+            <li>왼손 검지와 중지 같이 들기: 아래쪽으로 이동</li>
+            <p style="width:50%;height:50%;float:left;overflow:hidden;">
+                <img alt="1" src="{{ url_for('static', filename='왼손 2개.png') }}">
+            </p>
+            <p style="width:50%;height:50%;overflow:hidden;">
+                <img alt="2" src="{{ url_for('static', filename='오른손 주먹.png') }}">
+            </p>
+        </ul>
+    </details>
+
+    <footer>
+        <a href="/thinking_power" role="button">뒤로가기</a>
+    </footer>
+    <script>
+        const mazeData = [
+          [0, 0, 2, 0, 'G'],
+          [1, 1, 1, 0, 1],
+          [1, 0, 1, 0, 1],
+          ['S', 0, 1, 1, 1]
+        ];
+      
+        const maze = document.getElementById('maze');
+        const message = document.getElementById('message');
+        let playerPosition = { x: 0, y: 3 }; // Starting position
+        let star_count = 0
+        for (let i=0; i < mazeData.length; i++) {
+          star_count += mazeData[i].filter(element => 2 === element).length;
+        };
+      
+        let star = {};
+        star.stars = 0;
+        function drawMaze() {
+          maze.innerHTML = '';
+          mazeData.forEach((row, rowIndex) => {
+            row.forEach((cell, cellIndex) => {
+              const div = document.createElement('div');
+              div.classList.add('maze-cell');
+              if (cell === 1) {
+                div.classList.add('path');
+              } else if (cell === 0) {
+                div.classList.add('wall');
+              } else if (cell === 2) {
+                div.classList.add('star');
+              } else if (cell === 'S') {
+                div.classList.add('start', 'player');
+              } else if (cell === 'G') {
+                div.classList.add('goal');
+              }
+              maze.appendChild(div);
+            });
+          });
+        }
+      
+        function movePlayer(dx, dy) {
+          const newX = playerPosition.x + dx;
+          const newY = playerPosition.y + dy;
+          if (newX >= 0 && newX < 5 && newY >= 0 && newY < 4) {
+              if (mazeData[newY][newX] === 1 || mazeData[newY][newX] === 'G' || mazeData[newY][newX] === 2) {
+                  mazeData[playerPosition.y][playerPosition.x] = 1; // Clear old position
+                  playerPosition = { x: newX, y: newY };
+                  if (mazeData[newY][newX] === 2) {
+                      console.log((++star.stars));
+                      } else if (mazeData[newY][newX] === 'G') {
+                          if (star.stars === star_count) {
+                              message.textContent = '포인트를 얻고 목표에 잘 도착했어요!!';
+                              message.classList.remove('failure-message');
+                              message.classList.add('success-message');
+                          } else {
+                              message.textContent = '포인트를 얻지 못했지만 목표에 잘 도착했어요!!';
+                              message.classList.remove('success-message');
+                              message.classList.add('failure-message');
+                          };
+                      };
+                  mazeData[newY][newX] = 'S'; // Set new position
+                  drawMaze();
+              };
+          };
+        };
+      
+        drawMaze();
+      
+        document.addEventListener('keydown', (e) => {
+          switch (e.key) {
+            case 'w':
+              movePlayer(0, -1);
+              break;
+            case 's':
+              movePlayer(0, 1);
+              break;
+            case 'a':
+              movePlayer(-1, 0);
+              break;
+            case 'd':
+              movePlayer(1, 0);
+              break;
+          }
+        });
+    </script>
+</body>
+
+</html>

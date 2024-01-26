@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Genie Finger - Eng2</title>
+    <style>
+        footer{
+            margin-top: -50px;
+        }
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'yg-jalnan', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'yg-jalnan', sans-serif;
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            margin-top: 400px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px; /* 오른쪽 마진을 조절할 값 */
+            margin-left: 100px; /* 왼쪽 마진을 조절할 값 */
+            margin-top: 0px; /* 위쪽 마진을 조절할 값 */
+            margin-bottom: 20px; /* 아래쪽 마진을 조절할 값 */
+        }
+
+        .quiz-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 20px; /* 아래쪽 마진을 조절할 값 */
+            position: relative;
+        }
+
+        img.view,
+        video.view,
+        .quiz-container img.view {
+            width: 125%; /* 크기를 더 키우기 */
+            height: auto;
+            max-width: 200%;
+            max-height: 100%;
+            margin-top: 10px;
+        }
+
+        .quiz-container img.view {
+            width: 70%;
+            max-width: none;
+        }
+
+        .quiz-container div {
+            text-align: center;
+            width: 70%; /* 입력 폼 등의 너비 조절 */
+        }
+
+        .result-text {
+            margin-top: 20px;
+            width: 70%; /* 입력 폼 등의 너비 조절 */
+            white-space: nowrap; /* 텍스트가 한 줄로만 표시되도록 설정 */
+        }
+
+        details {
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            text-align: left;
+        }
+        .box {
+            width: 100%;
+            height: 150px;
+            background-color: #eee; /* 박스 배경색 */
+            padding: 10px;
+            margin: 0px 0px; /* 상하 여백 20px, 좌우 여백 자동 조정 */
+            margin-right: 0px;
+            border: 2px solid black; /* 테두리 선 추가 */
+            box-sizing: border-box; /* 테두리 선 포함한 크기로 설정 */
+            position: relative; /* 상대적 위치 지정 */
+        }
+
+        img {
+            display: block;
+            width: 30%; /* 이미지 폭을 박스에 맞추기 */
+            margin-right: 0px;
+            margin-top: 0px;
+            height: auto; /* 높이를 자동으로 조정하여 비율을 유지 */
+        }
+
+        .text-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            z-index: 4; /* 이미지 위에 텍스트 박스가 나타나도록 순서 조정 */
+        }
+
+        p {
+            font-size: 35px; /* 텍스트 크기를 24px로 수정 */
+            color: black; /* 초기에는 검정색으로 설정 */
+            margin: 10px; /* 각 텍스트 요소 사이의 간격 설정 */
+        }
+
+        p.red {
+            color: red; /* 매칭된 정답은 빨간색으로 변경 */
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px; /* 입력 폼과 텍스트 간의 간격 조정 */
+        }
+
+        #resultText {
+            font-size: 30px;
+            color: black; /* 초기에는 검정색으로 설정 */
+            margin-top: 10px; /* 텍스트와 입력 폼 간의 간격 조정 */
+        }
+
+        #scoreText {
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>단어 조합 하기</h1>
+
+    <div class="container">
+
+        <!-- Video Feed -->
+        <div class="video-container">
+            <img class="view" src="{{ url_for('english2_video_feed') }}" alt="English Quiz2 Video Feed">
+        </div>
+
+        <!-- Quiz Image -->
+        <div class="quiz-container">
+
+            <!-- English quiz code starts here -->
+            <div class="box">
+                <div class="text-box">
+                    <p>강아지</p>
+                    <p>총</p>
+                    <p>아들</p>
+                    <p>태양</p>
+                    <p>벌레</p>
+                    <p>버스</p>
+                    <p>신</p>
+                    <p>상자</p>
+                </div>
+            </div>
+            <img id="quizImage" class="view" src="{{ url_for('static', filename='11.png') }}" alt="English Quiz2 Image">
+            <p id="resultText"></p>
+            <p id="scoreText"></p>
+            <form onsubmit="checkAnswer(event)">
+                <input id="answerInput" type="text" placeholder="정답을 적어주세요." required="required" autocomplete="off">
+                <button type="submit">ENTER</button>
+            </form>
+        </div>
+    </div>
+
+    <details>
+        <summary role="button">설명서</summary>
+        <ul>
+            <li>오른쪽 문제 ‘정답을 적어주세요’ 에 커서를 넣고, 영어가 나오는지 확인해주세요.</li>
+            <li>왼쪽 가상 키보드는 검지 손가락을 인식합니다. 왼손, 오른손 둘 중 하나를 선택해주세요.</li>
+            <li>입력하고 싶은 알파벳에 검지 손가락을 갖다대면 입력됩니다.</li>
+            <li>전부 입력했으면 Enter를 누르고, 한 글자를 지우고 싶다면 Delete를 눌러주세요.</li>
+            <li>문제는 총 8문제이며, 한 문제당 1점 씩 점수가 올라갑니다.</li>
+            <li>수학이나 사고력 문제를 풀고 싶다면 뒤로 가기를 눌러 이용해주세요.</li>
+            <!-- 계속해서 필요한 만큼 항목을 추가할 수 있습니다. -->
+        </ul>
+    </details>
+
+    <footer>
+        <a href="/english" role="button">뒤로가기</a>
+    </footer>
+    <script>
+        const answers = {"dog": "강아지", "gun": "총", "son": "아들", "sun": "태양", "bug": "벌레", "bus": "버스", "god": "신", "box": "상자"};
+        let score = 0;
+        let answeredQuestions = [];
+        let gameEnded = false;
+
+        function checkAnswer(event) {
+            event.preventDefault();
+
+            if (gameEnded) {
+                return; // 게임이 종료되면 동작하지 않도록 처리
+            }
+
+            const userInput = document.getElementById('answerInput').value.toLowerCase();
+            const textElements = document.querySelectorAll('.text-box p');
+            const resultText = document.getElementById('resultText');
+            const scoreText = document.getElementById('scoreText');
+
+            if (answeredQuestions.includes(userInput)) {
+                resultText.textContent = "이미 맞추셨습니다!";
+                resultText.style.color = 'orange'; // 오렌지색으로 변경
+            } else if (answers.hasOwnProperty(userInput)) {
+                if (textElements.length > 0) {
+                    textElements.forEach((element) => {
+                        if (element.textContent.toLowerCase() === answers[userInput]) {
+                            element.classList.add('red');
+                        }
+                    });
+                }
+
+                answeredQuestions.push(userInput);
+
+                score += 1;
+                resultText.textContent = '정답입니다! 정말 대단한데요?';
+                resultText.style.color = 'green'; // 초록색으로 변경
+
+                if (score === Object.keys(answers).length) {
+                    resultText.textContent = '게임 종료. 축하합니다! 모든 문제를 맞추셨습니다.';
+                    resultText.style.color = 'white'; // 파란색으로 변경
+                    gameEnded = true;
+                }
+
+            } else {
+                resultText.textContent = '오답입니다! 다시 도전해보세요!';
+                resultText.style.color = 'red'; // 빨간색으로 변경
+            }
+
+            scoreText.textContent = '점수: ' + score;
+            document.getElementById('answerInput').value = '';
+        }
+    </script>
+
+</body>
+
+</html>

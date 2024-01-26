@@ -85,7 +85,4 @@
   <img src="https://github.com/dnddl6962/flask/assets/96913965/0af57721-4025-4458-9333-cb2df39dabb8" width = "630px">
 </p>
 
-'코트와 패딩' 천재교육 빅데이터 5기 Github Page 입니다!
-
-## ✏️ 팀원
-코트와 패딩 팀원
+🥇'코트와 패딩' 천재교육 빅데이터 5기 Github Page 입니다!🥇

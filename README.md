@@ -2,6 +2,7 @@
 
 <details>
 <summary>🖥 <b>commit log</b></summary><br>
+  
 ### Team Name - 코트와 패딩
 ### Project Name - Genie Finger
 ###  - 

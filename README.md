@@ -6,6 +6,54 @@
 ### Team Name - 코트와 패딩
 ### Project Name - Genie Finger
 
+<table>
+  <tr>
+    <td align="center">
+    <a href="https://github.com/k-3730">
+    <img src="https://github.com/k-3730.png" width="150px;" alt="홍준"/>
+    <br />
+    <sub>
+    <b>권홍준</b><br>
+    <b> :bulb: PM, 데이터 수집 및 가공</b>
+    </sub>
+    </a>
+    <br />
+    <td align="center">
+    <a href="https://github.com/dony1220">
+    <img src="https://github.com/dony1220.png" width="150px;" alt="도현"/>
+    <br />
+    <sub>
+    <b>김도현</b><br>
+    <b> :mag: 데이터 수집 및 가공, 로그 파일 연동</b>
+    </sub>
+    </a>
+    <td align="center">
+    <a href="https://github.com/dnddl6962">
+    <img src="https://github.com/dnddl6962.png" width="150px;" alt="웅"/>
+    <br />
+    <sub>
+    <b>장 웅</b><br>
+    <b>🌟 모델링</b>
+    </sub>
+    </a>
+    <br />
+    </td>
+    <td align="center">
+    <a href="https://github.com/surplus96">
+    <img src="https://github.com/surplus96.png" width="150px;" alt="태영"/>
+    <br />
+    <sub>
+    <b>최태영</b><br>
+    <b>🌟 모델링</b>
+    </sub>
+    </a>
+    <br />
+    </td>    
+    <br />
+    </td>    
+  </tr>
+</table>
+
 
 <h3 align="left"><b>🛠 Used Tool/Stack 🛠</b></h3>
 </br>

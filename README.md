@@ -25,3 +25,12 @@
 <img alt="Anaconda" src ="https://img.shields.io/badge/Anaconda-44A833.svg?&style=for-the-badge&logo=Anaconda&logoColor=black"/>
 <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
 <img alt="Google Colab" src ="https://img.shields.io/badge/Google Colab-F9AB00.svg?&style=for-the-badge&logo=Google Colab&logoColor=orange"/>
+
+</details>
+
+- - -
+## 📃 소개
+<p align="center">
+</p>
+
+`'코트와 패딩' 천재교육 빅데이터 5기 Github Page 입니다!'

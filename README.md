@@ -3,9 +3,9 @@
 <details>
 <summary>🖥 <b>commit log</b></summary><br>
 
-### Project Name - 
-### Major - Arabic
-### Now - 
+### Project Name - Genie Finger
+###  - 
+###  - 
 
 
 

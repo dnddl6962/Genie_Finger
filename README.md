@@ -1,11 +1,11 @@
-# 코트와 패딩 - Genie Finger
+**# 코트와 패딩 - Genie Finger**
 
 <details>
 <summary>🖥 <b>commit log</b></summary><br>
   
-### Team Name - 코트와 패딩
-### Project Name - Genie Finger
-### Team Member & R&R
+**### Team Name - 코트와 패딩**
+**### Project Name - Genie Finger**
+**### Team Member & R&R**
 
 
 <table>
@@ -80,7 +80,7 @@
 </details>
 
 - - -
-## 📃 소개
+## 📃 **소개**
 <p align="left">
   <img src="https://github.com/dnddl6962/flask/assets/96913965/0af57721-4025-4458-9333-cb2df39dabb8" width = "630px">
 </p>

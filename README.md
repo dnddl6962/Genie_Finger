@@ -5,8 +5,6 @@
   
 ### Team Name - 코트와 패딩
 ### Project Name - Genie Finger
-###  - 
-
 
 
 <h3 align="left"><b>🛠 Used Tool/Stack 🛠</b></h3>

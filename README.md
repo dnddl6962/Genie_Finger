@@ -86,7 +86,6 @@
 
 ## **🥑 운영자 메뉴얼**
 </br>
-
 - - -
 
 ## **:accessibility: SW License**

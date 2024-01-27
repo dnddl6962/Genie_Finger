@@ -56,8 +56,6 @@
   </tr>
 </table>
 <br/>
-<br/>
-
 
 
 <h3 align="left"><b>🛠 Used Tool/Stack 🛠</b></h3>

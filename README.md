@@ -73,8 +73,6 @@
 <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
 <img alt="Flask" src ="https://img.shields.io/badge/Flask-000000.svg?&style=for-the-badge&logo=Flask&logoColor=white"/>
 
-
-
 </details>
 
 - - -
@@ -83,8 +81,7 @@
   <img src="https://github.com/dnddl6962/flask/assets/96913965/0af57721-4025-4458-9333-cb2df39dabb8" width = "630px">
 </p>
 
-**🥇'코트와 패딩' 천재교육 빅데이터 5기 Github Page 입니다!🥇**
-<
+## **🥇'코트와 패딩' 천재교육 빅데이터 5기 Github Page 입니다!🥇**
 
 - - -
 ## 🥑 운영자 메뉴얼

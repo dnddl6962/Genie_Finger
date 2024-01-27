@@ -89,6 +89,6 @@
 
 - - -
 
-## :accessibility: SW License
+## **:accessibility: SW License**
 
 

@@ -101,7 +101,8 @@
 1. Font 
    <p align='left'>
       <img width="400" alt="20231121110245_KakaoTalk_20231120_190823851" src="https://github.com/dnddl6962/flask/assets/96913965/848d1362-738e-4b94-9e19-6356e5380959" width = "630px">
-     <b>JalnanGothic.TTF</b>
+     <br>
+     JalnanGothic.TTF
    </p>
 
 

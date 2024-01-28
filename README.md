@@ -98,11 +98,9 @@
 
 - - -
 ## **:accessibility: SW License**
-1. Font 
+1. Font : JalnanGothic.TTF
    <p align='left'>
       <img width="400" alt="20231121110245_KakaoTalk_20231120_190823851" src="https://github.com/dnddl6962/flask/assets/96913965/848d1362-738e-4b94-9e19-6356e5380959" width = "630px">
-     <br>
-     JalnanGothic.TTF
      <br>
      '여기어때 잘난체'는 개인 및 기업 사용자를 포함한 모든 사용자에게 무료로 제공되며 자유롭게 사용할 수 있습니다.
      <br>

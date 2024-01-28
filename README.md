@@ -1,7 +1,7 @@
 # 코트와 패딩 - Genie Finger
 
 <details>
-<summary>🖥 <b>commit log</b></summary><br>
+<summary>🖥 <b>Summary</b></summary><br>
   
 ### Team Name - 코트와 패딩
 ### Content Name - Genie Finger
@@ -92,7 +92,8 @@
 
 ## **🥑 개발환경 및 운영자 메뉴얼**
 <details>
-<summary><b>⚓requirements⚓</b></summary>
+<summary><b>⚓requirements⚓</b></summary><br>
+
 </details>
 
 

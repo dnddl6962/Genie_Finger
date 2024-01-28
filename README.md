@@ -83,7 +83,7 @@
 
 - - -
 ## 📃 **소개**
-## **🥇쳔재교육 빅데이터 5기 '코트와 패딩' Github Page 입니다!🥇**
+## **🥇천재교육 빅데이터 5기 '코트와 패딩' Github Page 입니다!🥇**
 
 <p align="left">
   <img src="https://github.com/dnddl6962/flask/assets/96913965/0af57721-4025-4458-9333-cb2df39dabb8" width = "630px">
@@ -105,6 +105,8 @@
      '여기어때 잘난체'는 개인 및 기업 사용자를 포함한 모든 사용자에게 무료로 제공되며 자유롭게 사용할 수 있습니다.
      <br>
      '여기어때 잘난체'는 라이선스 전문을 포함해서 다른 소프트웨어 임베딩 또는 번들하여 판매하거나 재배포가 가능합니다.
+     <br>
+     https://image.goodchoice.kr/images/jalnan_font/jalnan-font-190124ver.pdf
    </p>
 
 

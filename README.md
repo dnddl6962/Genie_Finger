@@ -94,7 +94,7 @@
 <details>
 <summary><b>⚓requirements⚓</b></summary>
 </details>
-- - -
+
 
 ## **:accessibility: SW License**
 

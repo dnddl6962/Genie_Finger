@@ -92,7 +92,7 @@
 
 ## **🥑 개발환경 및 운영자 메뉴얼**
 <details>
-<summary><b>⚓requirements⚓</b></summary><br>
+<summary><b>⚓requirements⚓</b></summary>
 
 </details>
 

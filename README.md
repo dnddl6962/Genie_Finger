@@ -95,7 +95,7 @@
 <details>
 <summary><b>⚓requirements⚓</b></summary>
   <br>
-  1. 주요 개발환경
+  1. **주요 개발환경**
   <br>
     - Flask == 3.0.0
   <br>
@@ -114,7 +114,7 @@
     - requirements.txt를 별첨하였으며 requirements.txt를 install을 통해 라이브러리를 설치하여 적절하게 환경 Setting이 가능합니다.
   <br>
   <br>
-  2. 운영자 메뉴얼
+  2. **운영자 메뉴얼**
   <br>
   
   - tools 폴더에 담긴 파일에 모든 컨텐츠들이 담겨 있으며, app 파일 하나를 실행했을시에, 돌아갈 수 있도록 분기 처리를 진행하였습니다. 따라서, app.py 코드를 실행하였을 때, 모든 컨텐츠들이 작동하며 app.py 파일에서 Port 번호를 조절하여 User가 사용하는 환경과 상황에 걸맞게 세팅하게끔 설정해 놓았습니다. 뿐만 아니라 Font_path를 커스텀하게 설정해야 합니다.

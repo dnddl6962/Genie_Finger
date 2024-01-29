@@ -128,7 +128,7 @@ def drawImage(randomList, path):
 def generate_burger_frames():
 
 
-    path = f"/Users/bearjang/Documents/flask/tools/ham_image"
+    path = f"{PATH}/ham_image"
     myList = os.listdir(path)
     listImg = []
     done_list = []

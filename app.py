@@ -46,40 +46,49 @@ def index():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('index.html')
 
+# 수학 컨텐츠 페이지 라우터
 @app.route('/math')
 def math():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('math.html')
 
+# 영어컨텐츠 페이지 라우터
 @app.route('/english')
 def eng():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('english.html')
 
+# 이미지 맞추기
 @app.route('/eng1')
 def eng1():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('eng1.html')
 
+# 영어단어 조합
 @app.route('/eng2')
 def eng2():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('eng2.html')
 
+# 사고력 컨텐츠 페이지 라우터
 @app.route('/thinking_power')
 def think():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('think.html')
 
+# 햄버거 만들기
 @app.route('/thk1')
 def thk1():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('thk1.html')
 
+# 미로 찾기
 @app.route('/thk2')
 def thk2():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('thk2.html')
+
+# 각 컨텐츠 웹캠에서의 이미지 프레임 불러오는 라우터
 
 hands = initialize_hands() # 수학 손 인식   
 @app.route('/math_video_feed')

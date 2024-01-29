@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import os
 
-PATH = os.getcwd()
+PATH = os.getcwd()  # ./flask
 
 font_path = f"{PATH}/static/JalnanGothicTTF.ttf"
 

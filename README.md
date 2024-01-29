@@ -94,16 +94,25 @@
 <details>
 <summary><b>⚓requirements⚓</b></summary>
   1. 주요 개발환경
-  <br/>
+  <br>
     - Flask == 3.0.0
+  <br>
     - cvzone == 1.6.1
+  <br>
     - mediapipe == 0.10.9
+  <br>
     - opencv-contrib-python == 4.9.0.80
+  <br>
     - opencv-python == 4.9.0.80
+  <br>
     - PyAutoGUI == 0.9.54
+  <br>
     - pynput == 1.7.6
   <br>
+  <br>
   2. 운영자 메뉴얼
+  <br>
+    - tools 폴더에 담긴 파일에 모든 컨텐츠들이 담겨 있으며, main 파일 하나만 돌아갈 수 있도록 분기 처리를 진행하였습니다. 따라서, main.py 코드를 실행하였을 때, 모든 컨텐츠들이 작동하며 main.py 파일에서 Port 번호를 조절하여 User가 사용하는 환경과 상황에 걸맞게 세팅하게끔 설정해 놓았습니다.
 </details>
 
 - - -

@@ -9,13 +9,14 @@ PATH = os.getcwd()  # ./flask
 
 font_path = f"{PATH}/static/JalnanGothicTTF.ttf"
 
+# 이미지에 텍스트 입력 함수
 def display_text(pil_img, hand_direction):
     font = ImageFont.truetype(font_path, 40)
     pil_image = Image.fromarray(pil_img)
     draw = ImageDraw.Draw(pil_image)
-    if hand_direction == '왼쪽' or hand_direction == '아래':
+    if hand_direction == '왼쪽' or hand_direction == '아래':    # 왼쪽 손 아래에 해당 움직임 출력
         draw.text((430, 440), f"{hand_direction}", font=font, fill=(255, 255, 0))
-    elif hand_direction == '오른쪽' or hand_direction == '위':
+    elif hand_direction == '오른쪽' or hand_direction == '위':  # 오른쪽 손 아래에 해당 움직임 출력
         draw.text((860, 440), f"{hand_direction}", font=font, fill=(255, 255, 0))
     img = np.array(pil_image)
     return img
@@ -38,6 +39,7 @@ def generate_maze_frames():
 
         if hands and len(hands) == 2:
             
+            # 먼저 인식되는 손 순서로 핸드트랙킹 입력값 세팅
             if hands[0]['type'] == 'Left' or hands[1]['type'] == 'Right':
 
                 hand1 = hands[1]  # 오른손
@@ -46,7 +48,6 @@ def generate_maze_frames():
                 fingerUp2=detector.fingersUp(hand2)
                 handType1 = hand1["type"]
                 handType2 = hand2["type"]
-
             elif hands[1]['type'] == 'Left' or hands[0]['type'] == 'Right':
 
                 hand1 = hands[0]  # 오른손
@@ -56,8 +57,7 @@ def generate_maze_frames():
                 handType1 = hand1["type"]
                 handType2 = hand2["type"]
 
-            # 오른손을 먼저 인식 시켜야 됨
-
+            #오른손 검지+중지 --> 위로 이동
             if fingerUp1==[1,1,1,0,0] and handType1 == 'Right':
                 # cv2.putText(img, 'Up', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
                 # hexKeyCode = 0x11
@@ -71,6 +71,7 @@ def generate_maze_frames():
                 keyPressed = True
                 key_count=key_count+1
 
+            # 왼손 검지+중지 --> 아래로 이동
             if fingerUp2==[1,1,1,0,0] and handType2 == 'Left':
                 # cv2.putText(img, 'Down', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
                 # hexKeyCode = 0x1F
@@ -84,6 +85,7 @@ def generate_maze_frames():
                 keyPressed = True
                 key_count=key_count+1
 
+            # 오른손 검지 하나 --> 오른쪽 이동
             if fingerUp1==[1,1,0,0,0] and handType1 == 'Right':
                 # cv2.putText(img, 'Right', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
                 # hexKeyCode = 0x20
@@ -97,6 +99,7 @@ def generate_maze_frames():
                 keyPressed = True
                 key_count=key_count+1
 
+            # 왼손 검지 하나 --> 왼쪽으로 이동
             if fingerUp2==[1,1,0,0,0] and handType2 == 'Left':
                 # cv2.putText(img, 'Left', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
                 # hexKeyCode = 0x1E
@@ -110,16 +113,15 @@ def generate_maze_frames():
                 keyPressed = True
                 key_count=key_count+1
 
+            # 입력받은 핸드트랙킹 입력값을 키보드 입력값으로 반환
             if not keyPressed and len(current_key_pressed) != 0:
                 for key in current_key_pressed:
-                    sendkey.ReleaseKey(key)
-                
+                    sendkey.ReleaseKey(key)     
                 current_key_pressed = set()
             elif key_count==1 and len(current_key_pressed)==2:    
                 for key in current_key_pressed:             
                     if key_pressed!=key:
-                        sendkey.ReleaseKey(key)
-                    
+                        sendkey.ReleaseKey(key)       
                 current_key_pressed = set()
                 for key in current_key_pressed:
                     sendkey.ReleaseKey(key)

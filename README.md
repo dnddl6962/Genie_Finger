@@ -159,3 +159,8 @@
    - 해당 라이브러리는 PIL Software License에 의거합니다. 따라서 PIL Software License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
 
 </details>
+
+## **🧑 컨텐츠 결과**
+<details>
+<summary><b>🔡English🔡</b></summary>
+</details>

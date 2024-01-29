@@ -98,22 +98,22 @@ def math_video_feed():
     app.logger.info(f'[{request.method}] {request.path}')
     return Response(generate_frames(hands), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/english1_video_feed')
+@app.route('/english1_video_feed')    # 이미지 맞추기 손 인식
 def english1_video_feed():
     app.logger.info(f'[{request.method}] {request.path}')
     return Response(generate_english_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/english2_video_feed')
+@app.route('/english2_video_feed')    # 단어 조합 손 인식
 def english2_video_feed():
     app.logger.info(f'[{request.method}] {request.path}')
     return Response(generate_english2_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/thinking_power1_video_feed')
+@app.route('/thinking_power1_video_feed') # 햄버거 만들기 손 인식
 def thinking_power1_video_feed():
     app.logger.info(f'[{request.method}] {request.path}')
     return Response(generate_burger_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/thinking_power2_video_feed')
+@app.route('/thinking_power2_video_feed') # 미로찾기 손 인식
 def thinking_power2_video_feed():
     app.logger.info(f'[{request.method}] {request.path}')
     return Response(generate_maze_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')

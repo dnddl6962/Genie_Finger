@@ -93,20 +93,20 @@
 ## **🥑 개발환경 및 운영자 메뉴얼**
 <details>
 <summary><b>⚓requirements⚓</b></summary>
-1. 주요 개발환경
-  - Flask == 3.0.0
+  1. 주요 개발환경
+    - Flask == 3.0.0
   <br>
-  - cvzone == 1.6.1
+    - cvzone == 1.6.1
   <br>
-  - mediapipe == 0.10.9
+    - mediapipe == 0.10.9
   <br>
-  - opencv-contrib-python == 4.9.0.80
+    - opencv-contrib-python == 4.9.0.80
   <br>
-  - opencv-python == 4.9.0.80
+    - opencv-python == 4.9.0.80
   <br>
-  - PyAutoGUI == 0.9.54
+    - PyAutoGUI == 0.9.54
   <br>
-  - pynput == 1.7.6
+    - pynput == 1.7.6
   <br>
 </details>
 

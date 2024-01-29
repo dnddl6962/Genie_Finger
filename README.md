@@ -137,9 +137,22 @@
      3 - 헤당 링크를 참조해서 폰트를 다운받아주시고, 라이센스를 참고해주시기 바랍니다.
      https://image.goodchoice.kr/images/jalnan_font/jalnan-font-190124ver.pdf
      <br>
+     <br>
 2. MediaPipe : **Apache 2.0 License**
    <br>
-   1 - 해당 라이브러리는 Apache 2.0 License에 의거합니다. 따라서 MediaPipe License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
+   - 해당 라이브러리는 Apache 2.0 License에 의거합니다. 따라서 MediaPipe License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
    </p>
+   <br>
+
+3. CVZONE : **MIT License**
+   - 해당 라이브러리는 MIT License에 의거합니다. 따라서 MIT License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
+   <br>
+
+4. Flask : **BSD License**
+   - 해당 라이브러리는 BSD License에 의거합니다. 따라서 BSD License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
+   <br>
+
+5. Pillow : **PIL Software License**
+   - 해당 라이브러리는 PIL Software License에 의거합니다. 따라서 PIL Software License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
 
 

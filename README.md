@@ -163,13 +163,13 @@
 - - -
 ## **🧑 컨텐츠 결과**
 <details>
-<summary><b>🔡English🔡</b></summary>
+<summary><b>🔤English🔤</b></summary>
 </details>
 
 <br>
 
 <details>
-<summary><b>🔢Math🔢</b></summary>
+<summary><b>💯Math💯</b></summary>
 </details>
 
 <br>

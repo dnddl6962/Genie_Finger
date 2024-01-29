@@ -95,12 +95,19 @@
 <summary><b>⚓requirements⚓</b></summary>
 1. 주요 개발환경
   - Flask == 3.0.0
+  <br>
   - cvzone == 1.6.1
+  <br>
   - mediapipe == 0.10.9
+  <br>
   - opencv-contrib-python == 4.9.0.80
+  <br>
   - opencv-python == 4.9.0.80
+  <br>
   - PyAutoGUI == 0.9.54
+  <br>
   - pynput == 1.7.6
+  <br>
 </details>
 
 - - -

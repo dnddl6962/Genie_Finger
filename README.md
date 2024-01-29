@@ -169,7 +169,6 @@
     <figcaption>
       이미지 맞히기
     </figcaption>
-  </p>
   <p align='right'>
     <img src = "https://github.com/dnddl6962/flask/assets/96913965/a42a78af-f84e-49d1-b06e-5741318cbd36" width = "500px">
     <figcaption>

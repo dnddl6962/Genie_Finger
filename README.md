@@ -166,14 +166,7 @@
 <summary><b>🔤English🔤</b></summary>
   <p align='left'>
     <img src = "https://github.com/dnddl6962/flask/assets/96913965/4990cbec-d143-4cbd-945c-44f50d085166" width = "500px">
-    <figcaption>
-      이미지 맞히기
-    </figcaption>
-  <p align='right'>
     <img src = "https://github.com/dnddl6962/flask/assets/96913965/a42a78af-f84e-49d1-b06e-5741318cbd36" width = "500px">
-    <figcaption>
-      단어 조합하기
-    </figcaption>
   </p>
 </details>
 
@@ -183,8 +176,6 @@
 <summary><b>💯Math💯</b></summary>
   <p align='left'>
     <img width="400" alt = "math proto" src = "https://github.com/dnddl6962/flask/assets/96913965/160bc60d-0f10-4e02-a5d6-45bfb53c9b36" width = "630px">
-    <br>
-      덧셈/뺄셈 Quiz
 </details>
 
 <br>

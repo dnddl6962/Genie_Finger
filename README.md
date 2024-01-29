@@ -138,6 +138,7 @@
       <img width="400" alt="20231121110245_KakaoTalk_20231120_190823851" src="https://github.com/dnddl6962/flask/assets/96913965/848d1362-738e-4b94-9e19-6356e5380959" width = "630px">
      <br>
      해당 링크를 참조해서 폰트를 다운받아주시고, 라이센스를 참고해주시기 바랍니다.
+     <br>
      https://image.goodchoice.kr/images/jalnan_font/jalnan-font-190124ver.pdf
      <br>
      <br>

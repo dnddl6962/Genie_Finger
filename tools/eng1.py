@@ -2,6 +2,9 @@ import cv2
 from cvzone.HandTrackingModule import HandDetector
 import time
 from pynput.keyboard import Controller, Key
+#가상 키보드를 이용하여 사용자가 직접 입력할 수 있도록
+#해당 라이브러리를 Import
+#pynput.keyboard
 
 
 
@@ -9,6 +12,7 @@ class HandTrackingModule:
     def __init__(self, detectionCon=0.7):
         self.detector = HandDetector(detectionCon=detectionCon)
         self.keyboard = Controller()
+        #handtrackingmodule를 설정하고
 
     def draw_buttons(self, img, buttonList):
         for button in buttonList:
@@ -18,6 +22,7 @@ class HandTrackingModule:
             cv2.putText(img, button.text, (x + 20, y + 65),
                         cv2.FONT_HERSHEY_TRIPLEX, 2, (255, 255, 255), 2)
         return img
+
 
     def process_frame(self, img, buttonList, last_click_time, click_delay):
         img = cv2.flip(img, 1)
@@ -52,6 +57,7 @@ class HandTrackingModule:
                     last_click_time = current_time
 
         return img, last_click_time
+        #해당 웹 캠 프레임을 띄울 수 있는 함수를 생성
 
 
 class Button:
@@ -70,7 +76,8 @@ buttonList = [
     Button([1000, 400], "Delete", size=[250, 100]),
     Button([45, 400], "Enter", size=[250, 100])
 ]
-
+#해당 클래스는 이미지를 맞히기 위한 알파벳과
+#지울 수 있는 Delete, Enter를 생성해주는 클래스.
 
 def generate_english_frames():
     cap = cv2.VideoCapture(0)
@@ -93,3 +100,5 @@ def generate_english_frames():
                b'Content-Type: image/jpeg\r\n\r\n' + jpeg.tobytes() + b'\r\n')
 
     cap.release()
+#해당 함수는 위의 함수들을 불러와서
+#해당 프레임들을 Flask에 전송하여 웹 페이지에 띄울 수 있게끔 코드를 수정하였다.

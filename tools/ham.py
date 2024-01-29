@@ -7,7 +7,10 @@ import random
 import os
 
 
-font_path = "/Users/bearjang/Desktop/JalnanGothicTTF.ttf"
+PATH = os.getcwd()
+
+font_path = f"{PATH}/static/JalnanGothicTTF.ttf"
+font = ImageFont.truetype(font_path, 30)
 font = ImageFont.truetype(font_path, 30)
 
 

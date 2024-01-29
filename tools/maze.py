@@ -59,8 +59,6 @@ def generate_maze_frames():
 
             #오른손 검지+중지 --> 위로 이동
             if fingerUp1==[1,1,1,0,0] and handType1 == 'Right':
-                # cv2.putText(img, 'Up', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
-                # hexKeyCode = 0x11
                 img = display_text(img, "위")
                 hexKeyCode = 'w'
                 sendkey.PressKey(hexKeyCode)
@@ -73,8 +71,6 @@ def generate_maze_frames():
 
             # 왼손 검지+중지 --> 아래로 이동
             if fingerUp2==[1,1,1,0,0] and handType2 == 'Left':
-                # cv2.putText(img, 'Down', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
-                # hexKeyCode = 0x1F
                 img = display_text(img, "아래")
                 hexKeyCode = 's'
                 sendkey.PressKey(hexKeyCode)
@@ -87,8 +83,6 @@ def generate_maze_frames():
 
             # 오른손 검지 하나 --> 오른쪽 이동
             if fingerUp1==[1,1,0,0,0] and handType1 == 'Right':
-                # cv2.putText(img, 'Right', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
-                # hexKeyCode = 0x20
                 img = display_text(img, "오른쪽")
                 hexKeyCode = 'd'
                 sendkey.PressKey(hexKeyCode)
@@ -101,8 +95,6 @@ def generate_maze_frames():
 
             # 왼손 검지 하나 --> 왼쪽으로 이동
             if fingerUp2==[1,1,0,0,0] and handType2 == 'Left':
-                # cv2.putText(img, 'Left', (420,460), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1, cv2.LINE_AA)
-                # hexKeyCode = 0x1E
                 img = display_text(img, "왼쪽")
                 hexKeyCode = 'a'
                 sendkey.PressKey(hexKeyCode)

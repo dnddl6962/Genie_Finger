@@ -182,4 +182,8 @@
 
 <details>
 <summary><b>🧠Thinking Power🧠</b></summary>
+  <p align='left'>
+    <img src = "https://github.com/dnddl6962/flask/assets/96913965/620b6f60-cdb1-4db4-9af5-f71c8f35cd0d" width = "500px">
+    <img src = "https://github.com/dnddl6962/flask/assets/96913965/d3bb00c8-6222-4ca6-8c9c-812b0c49caad" width = "500px">
+  </p>
 </details>

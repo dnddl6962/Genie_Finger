@@ -109,6 +109,7 @@
   <br>
     - pynput == 1.7.6
   <br>
+    - requirements.txt를 별첨하였으며 requirements.txt를 install을 통해 라이브러리를 설치하여 적절하게 환경 Setting이 가능합니다.
   <br>
   2. 운영자 메뉴얼
   <br>

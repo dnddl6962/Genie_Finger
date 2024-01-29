@@ -148,7 +148,7 @@
 2. MediaPipe : **Apache 2.0 License**
    
    - 해당 라이브러리는 Apache 2.0 License에 의거합니다. 따라서 MediaPipe License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
-   </p>
+   
    
 3. CVZONE : **MIT License**
    - 해당 라이브러리는 MIT License에 의거합니다. 따라서 MIT License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
@@ -158,7 +158,7 @@
 
 5. Pillow : **PIL Software License**
    - 해당 라이브러리는 PIL Software License에 의거합니다. 따라서 PIL Software License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
-
+   </p>
 </details>
 
 - - -

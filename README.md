@@ -94,6 +94,7 @@
 <details>
 <summary><b>⚓requirements⚓</b></summary>
   1. 주요 개발환경
+  <br>
     - Flask == 3.0.0
   <br>
     - cvzone == 1.6.1

@@ -94,7 +94,7 @@
 <details>
 <summary><b>⚓requirements⚓</b></summary>
   1. 주요 개발환경
-  <br />
+  <br/>
     - Flask == 3.0.0
     - cvzone == 1.6.1
     - mediapipe == 0.10.9

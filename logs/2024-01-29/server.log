@@ -1,0 +1,42 @@
+INFO:app:server on :: PORT=5000
+2024/01/29 14:24:35 - INFO - server on :: PORT=5000
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024/01/29 14:24:35 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+2024/01/29 14:24:35 - INFO - [33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+2024/01/29 14:24:35 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/29 14:24:37 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/29 14:24:37 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/29 14:24:37 - INFO -  * Debugger PIN: 145-038-903
+INFO:app:[GET] /
+2024/01/29 14:25:42 - INFO - [GET] /
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:42] "GET / HTTP/1.1" 200 -
+2024/01/29 14:25:42 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024/01/29 14:25:42 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:[GET] /index
+2024/01/29 14:25:44 - INFO - [GET] /index
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:44] "GET /index HTTP/1.1" 200 -
+2024/01/29 14:25:44 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:44] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:45] "GET /static/logo.png HTTP/1.1" 200 -
+2024/01/29 14:25:45 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:45] "GET /static/logo.png HTTP/1.1" 200 -
+INFO:app:[GET] /english
+2024/01/29 14:25:46 - INFO - [GET] /english
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:46] "GET /english HTTP/1.1" 200 -
+2024/01/29 14:25:46 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:46] "GET /english HTTP/1.1" 200 -
+INFO:app:[GET] /eng1
+2024/01/29 14:25:48 - INFO - [GET] /eng1
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:48] "GET /eng1 HTTP/1.1" 200 -
+2024/01/29 14:25:48 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:48] "GET /eng1 HTTP/1.1" 200 -
+INFO:app:[GET] /english1_video_feed
+2024/01/29 14:25:48 - INFO - [GET] /english1_video_feed
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:48] "GET /static/1.png HTTP/1.1" 200 -
+2024/01/29 14:25:48 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:48] "GET /static/1.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2024 14:25:50] "GET /english1_video_feed HTTP/1.1" 200 -
+2024/01/29 14:25:50 - INFO - 127.0.0.1 - - [29/Jan/2024 14:25:50] "GET /english1_video_feed HTTP/1.1" 200 -

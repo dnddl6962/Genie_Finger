@@ -135,7 +135,10 @@
      <br>
      3 - 헤당 링크를 참조해서 폰트를 다운받아주시고, 라이센스를 참고해주시기 바랍니다.
      https://image.goodchoice.kr/images/jalnan_font/jalnan-font-190124ver.pdf
+     <br>
 2. MediaPipe : **Apache 2.0 License**
+   <br>
+   1 - 해당 라이브러리는 Apache 2.0 License에 의거합니다. 따라서 MediaPipe License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
    </p>
 
 

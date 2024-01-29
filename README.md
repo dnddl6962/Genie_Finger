@@ -106,7 +106,6 @@
      <br>
      2 - '여기어때 잘난체'는 라이선스 전문을 포함해서 다른 소프트웨어 임베딩 또는 번들하여 판매하거나 재배포가 가능합니다.
      <br>
-     <br>
      3 - 헤당 링크를 참조해서 폰트를 다운받아주시고, 라이센스를 참고해주시기 바랍니다.
      https://image.goodchoice.kr/images/jalnan_font/jalnan-font-190124ver.pdf
    </p>

@@ -35,12 +35,12 @@ file_handler.setFormatter(log_formatter)
 logging.getLogger().addHandler(file_handler)
 
 
-
+# 사용자 동의 페이지 라우터
 @app.route('/')
 def security():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('security.html')
-
+# 메인 페이지 라우터
 @app.route('/index')
 def index():
     app.logger.info(f'[{request.method}] {request.path}')

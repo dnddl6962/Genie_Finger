@@ -7,7 +7,7 @@ import random
 import os
 
 
-PATH = os.getcwd()
+PATH = os.getcwd() # ./flask
 
 font_path = f"{PATH}/static/JalnanGothicTTF.ttf"
 font = ImageFont.truetype(font_path, 30)
@@ -128,7 +128,7 @@ def drawImage(randomList, path):
 def generate_burger_frames():
 
 
-    path = f"{PATH}/ham_image"
+    path = f"{PATH}/tools/ham_image"
     myList = os.listdir(path)
     listImg = []
     done_list = []

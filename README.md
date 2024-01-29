@@ -93,6 +93,7 @@
 ## **🥑 개발환경 및 운영자 메뉴얼**
 <details>
 <summary><b>⚓requirements⚓</b></summary>
+  <br>
   1. 주요 개발환경
   <br>
     - Flask == 3.0.0

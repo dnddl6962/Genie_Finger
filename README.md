@@ -133,6 +133,7 @@
     - 해당 링크를 참조해서 폰트를 다운받아주시고, 라이센스를 참고해주시기 바랍니다.
      https://image.goodchoice.kr/images/jalnan_font/jalnan-font-190124ver.pdf
      <br>
+     <br>
      
 2. MediaPipe : **Apache 2.0 License**
    

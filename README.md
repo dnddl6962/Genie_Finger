@@ -165,3 +165,15 @@
 <details>
 <summary><b>🔡English🔡</b></summary>
 </details>
+
+<br>
+
+<details>
+<summary><b>🔢Math🔢</b></summary>
+</details>
+
+<br>
+
+<details>
+<summary><b>🧠Thinking Power🧠</b></summary>
+</details>

@@ -12,7 +12,7 @@ hands = mp_hands.Hands(
     min_tracking_confidence=0.5,
     max_num_hands=1
 )
-PATH = os.getcwd()
+PATH = os.getcwd()  # ./flask
 
 font_path = f"{PATH}/static/JalnanGothicTTF.ttf"
 font = ImageFont.truetype(font_path, 30)

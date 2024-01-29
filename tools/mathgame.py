@@ -4,6 +4,7 @@ import numpy as np
 import random
 import time
 import mediapipe as mp
+import os
 # hands 객체를 전역으로 선언
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(
@@ -11,8 +12,11 @@ hands = mp_hands.Hands(
     min_tracking_confidence=0.5,
     max_num_hands=1
 )
-font_path = "/Users/bearjang/Desktop/JalnanGothicTTF.ttf"
+PATH = os.getcwd()
+
+font_path = f"{PATH}/static/JalnanGothicTTF.ttf"
 font = ImageFont.truetype(font_path, 30)
+
 width, height = 640, 480
 number_coordinates_upper = [(width // 10 * i + width // 7, height // 4) for i in range(1, 11)]
 number_coordinates_lower = [(width // 10 * (i - 10) + width // 7, 3 * height // 4) for i in range(11, 21)]

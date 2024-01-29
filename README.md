@@ -88,8 +88,8 @@
 <p align="left">
   <img src="https://github.com/dnddl6962/flask/assets/96913965/0af57721-4025-4458-9333-cb2df39dabb8" width = "630px">
 </p>
-
-
+<br>
+저희는 유아들을 대상으로 최근 트렌드에 걸맞게 MediaPipe를 이용하여 카메라와 사용자간의 상호작용을 바탕으로 '에듀테인먼트'를 주제로 프로젝트를 진행하였습니다.
 
 - - -
 

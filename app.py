@@ -46,6 +46,8 @@ def index():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('index.html')
 
+# 각 컨텐츠 페이지 라우터 ---------------------------------------------------------
+
 # 수학 컨텐츠 페이지 라우터
 @app.route('/math')
 def math():
@@ -88,7 +90,7 @@ def thk2():
     app.logger.info(f'[{request.method}] {request.path}')
     return render_template('thk2.html')
 
-# 각 컨텐츠 웹캠에서의 이미지 프레임 불러오는 라우터
+# 각 컨텐츠 웹캠에서의 이미지 프레임 불러오는 라우터 -----------------------------
 
 hands = initialize_hands() # 수학 손 인식   
 @app.route('/math_video_feed')

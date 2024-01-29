@@ -3,8 +3,11 @@ from PIL import ImageFont, ImageDraw, Image
 from cvzone.HandTrackingModule import HandDetector
 import cv2
 import numpy as np
+import os
 
-font_path = "/Users/bearjang/Desktop/JalnanGothicTTF.ttf"
+PATH = os.getcwd()
+
+font_path = f"{PATH}/static/JalnanGothicTTF.ttf"
 
 def display_text(pil_img, hand_direction):
     font = ImageFont.truetype(font_path, 40)

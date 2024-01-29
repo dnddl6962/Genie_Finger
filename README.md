@@ -89,11 +89,13 @@
   <img src="https://github.com/dnddl6962/flask/assets/96913965/0af57721-4025-4458-9333-cb2df39dabb8" width = "630px">
 </p>
 
+
+
 - - -
 
 ## **🥑 개발환경 및 운영자 메뉴얼**
 <details>
-<summary><b>⚓requirements⚓</b></summary>
+<summary><b>⚓Requirements⚓</b></summary>
   <br>
   1. 주요 개발환경
   <br>
@@ -129,6 +131,8 @@
 
 - - -
 ## **:accessibility: SW License**
+<details>
+<summary><b>💡License💡</b></summary>
 1. Font : **JalnanGothic.TTF**
    <p align='left'>
       <img width="400" alt="20231121110245_KakaoTalk_20231120_190823851" src="https://github.com/dnddl6962/flask/assets/96913965/848d1362-738e-4b94-9e19-6356e5380959" width = "630px">
@@ -152,4 +156,4 @@
 5. Pillow : **PIL Software License**
    - 해당 라이브러리는 PIL Software License에 의거합니다. 따라서 PIL Software License를 별첨하였으며 라이센스에 대해서는 해당 파일을 참조하시면 됩니다.
 
-
+</details>

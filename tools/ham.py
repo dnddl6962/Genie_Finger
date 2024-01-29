@@ -22,7 +22,7 @@ def display_text(frame, font, text):
     return frame
 
 
-class DragImg():
+class DragImg():    # 커서 (검지+중지) 기준으로 재료 이미지가 드래그 되는 함수
     def __init__(self, name, path, posOrigin, imgType):
         self.posOrigin = posOrigin
         self.imgType = imgType
@@ -68,31 +68,8 @@ class VideoCamera02:
         if hands:
             lmList = hands[0]['lmList']
             length, info, img = self.detector1.findDistance((lmList[4][0], lmList[4][1]), (lmList[8][0], lmList[8][1]), img)   # 검지와 중지 사이 거리 계산해서 그랩 기능 구현
-            if length < 70:
-                cursor = lmList[8]
-                for idx, imgObject in enumerate(self.listImg):
-                    if imgObject not in self.done_list:
-                        imgObject.update(cursor)
-                        self.listImg[idx], self.listImg[-1] = self.listImg[-1], self.listImg[idx]
-                        if 360 < imgObject.posOrigin[0] < 800 and 400 < imgObject.posOrigin[1] < 500 and imgObject.name not in self.orderList:  
-                            self.doneItem[imgObject] = self.plate_y - self.q                # 재료를 접시 범위 내에 드래그한다면 재료 위치벡터를 접시 위로 고정
-                            self.orderList.append(imgObject.name)                           # 재료를 놓은 순서대로 리스트에 append
-                            self.done_list.append(list(self.doneItem.keys())[-1])
-                            self.q += 20
-                    else:
-                        self.listImg[idx], self.listImg[y] = self.listImg[y], self.listImg[idx]
-                        y += 1
-        try:
-            for imgObject in self.listImg:    # 재료 이미지들의 위치벡터를 출력 이미지에 오버레이
-                h, w = imgObject.size
-                ox, oy = imgObject.posOrigin
-                if imgObject.imgType == "png" and imgObject not in self.done_list:
-                    img = cvzone.overlayPNG(img, imgObject.img, [ox, oy])
-                else:
-                    if imgObject == self.plateImg:
-                        img = cvzone.overlayPNG(img, imgObject.img, [400, 400])
-                    else:
-                        if imgObject in list(self.doneItem.keys()):
+            if length < 70:    # 검지 중지 사이 거리가 70이내면 그랩 기능 구현
+                cursor = lmList[8]정
                             img = cvzone.overlayPNG(img, imgObject.img, [self.plate_x, self.doneItem[imgObject]])
                         else:
                             img = cvzone.overlayPNG(img, imgObject.img, [self.plate_x, self.plate_y])

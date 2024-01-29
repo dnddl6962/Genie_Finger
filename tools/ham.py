@@ -69,7 +69,7 @@ class VideoCamera02:
             lmList = hands[0]['lmList']
             length, info, img = self.detector1.findDistance((lmList[4][0], lmList[4][1]), (lmList[8][0], lmList[8][1]), img)   # 검지와 중지 사이 거리 계산해서 그랩 기능 구현
             if length < 70:    # 검지 중지 사이 거리가 70이내면 그랩 기능 구현
-                cursor = lmList[8]정
+                cursor = lmList[8]
                             img = cvzone.overlayPNG(img, imgObject.img, [self.plate_x, self.doneItem[imgObject]])
                         else:
                             img = cvzone.overlayPNG(img, imgObject.img, [self.plate_x, self.plate_y])

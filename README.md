@@ -170,6 +170,12 @@
 
 <details>
 <summary><b>💯Math💯</b></summary>
+  <p align='left'>
+    <img width="400" alt = "math proto" src = "https://github.com/dnddl6962/flask/assets/96913965/160bc60d-0f10-4e02-a5d6-45bfb53c9b36" width = "630px">
+    <br>
+    <sub>
+      덧셈/뺄셈 Quiz
+    </sub>
 </details>
 
 <br>

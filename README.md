@@ -165,11 +165,11 @@
 <details>
 <summary><b>🔤English🔤</b></summary>
   <p align='left'>
-    <img src = "https://github.com/dnddl6962/flask/assets/96913965/4990cbec-d143-4cbd-945c-44f50d085166" width = "400px">
+    <img src = "https://github.com/dnddl6962/flask/assets/96913965/4990cbec-d143-4cbd-945c-44f50d085166" width = "500px">
     <br>
       이미지 맞히기
-  <p align='right'>
-    <img src = "https://github.com/dnddl6962/flask/assets/96913965/a42a78af-f84e-49d1-b06e-5741318cbd36" width = "400px">
+  <p align='center'>
+    <img src = "https://github.com/dnddl6962/flask/assets/96913965/a42a78af-f84e-49d1-b06e-5741318cbd36" width = "500px">
     <br>
       영어 단어 맞히기
 </details>

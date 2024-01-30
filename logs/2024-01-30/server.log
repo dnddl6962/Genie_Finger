@@ -1,0 +1,164 @@
+INFO:app:server on :: PORT=5000
+2024/01/30 14:05:15 - INFO - server on :: PORT=5000
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024/01/30 14:05:15 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+2024/01/30 14:05:15 - INFO - [33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:05:15 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:05:18 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:05:18 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:05:18 - INFO -  * Debugger PIN: 145-038-903
+INFO:app:[GET] /
+2024/01/30 14:05:34 - INFO - [GET] /
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:34] "GET / HTTP/1.1" 200 -
+2024/01/30 14:05:34 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024/01/30 14:05:34 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:[GET] /index
+2024/01/30 14:05:35 - INFO - [GET] /index
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:35] "GET /index HTTP/1.1" 200 -
+2024/01/30 14:05:35 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:35] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:36] "GET /static/logo.png HTTP/1.1" 200 -
+2024/01/30 14:05:36 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:36] "GET /static/logo.png HTTP/1.1" 200 -
+INFO:app:[GET] /thinking_power
+2024/01/30 14:05:38 - INFO - [GET] /thinking_power
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:38] "GET /thinking_power HTTP/1.1" 200 -
+2024/01/30 14:05:38 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:38] "GET /thinking_power HTTP/1.1" 200 -
+INFO:app:[GET] /thk1
+2024/01/30 14:05:39 - INFO - [GET] /thk1
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:39] "GET /thk1 HTTP/1.1" 200 -
+2024/01/30 14:05:39 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:39] "GET /thk1 HTTP/1.1" 200 -
+INFO:app:[GET] /thinking_power1_video_feed
+2024/01/30 14:05:39 - INFO - [GET] /thinking_power1_video_feed
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:39] "GET /static/hamhand.png HTTP/1.1" 200 -
+2024/01/30 14:05:39 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:39] "GET /static/hamhand.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:05:42] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+2024/01/30 14:05:42 - INFO - 127.0.0.1 - - [30/Jan/2024 14:05:42] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+INFO:app:[GET] /thk1
+2024/01/30 14:06:40 - INFO - [GET] /thk1
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:06:40] "GET /thk1 HTTP/1.1" 200 -
+2024/01/30 14:06:40 - INFO - 127.0.0.1 - - [30/Jan/2024 14:06:40] "GET /thk1 HTTP/1.1" 200 -
+INFO:app:[GET] /thinking_power1_video_feed
+2024/01/30 14:06:40 - INFO - [GET] /thinking_power1_video_feed
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:06:40] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+2024/01/30 14:06:40 - INFO - 127.0.0.1 - - [30/Jan/2024 14:06:40] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:06:43] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+2024/01/30 14:06:43 - INFO - 127.0.0.1 - - [30/Jan/2024 14:06:43] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:07:27 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:07:27 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:07:30 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:07:30 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:07:30 - INFO -  * Debugger PIN: 145-038-903
+INFO:app:[GET] /thk1
+2024/01/30 14:07:30 - INFO - [GET] /thk1
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:07:30] "GET /thk1 HTTP/1.1" 200 -
+2024/01/30 14:07:30 - INFO - 127.0.0.1 - - [30/Jan/2024 14:07:30] "GET /thk1 HTTP/1.1" 200 -
+INFO:app:[GET] /thinking_power1_video_feed
+2024/01/30 14:07:30 - INFO - [GET] /thinking_power1_video_feed
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:07:30] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+2024/01/30 14:07:30 - INFO - 127.0.0.1 - - [30/Jan/2024 14:07:30] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+INFO:app:[GET] /thk1
+2024/01/30 14:07:31 - INFO - [GET] /thk1
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:07:31] "GET /thk1 HTTP/1.1" 200 -
+2024/01/30 14:07:31 - INFO - 127.0.0.1 - - [30/Jan/2024 14:07:31] "GET /thk1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:07:32] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+2024/01/30 14:07:32 - INFO - 127.0.0.1 - - [30/Jan/2024 14:07:32] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+INFO:app:[GET] /thinking_power1_video_feed
+2024/01/30 14:07:32 - INFO - [GET] /thinking_power1_video_feed
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:07:32] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+2024/01/30 14:07:32 - INFO - 127.0.0.1 - - [30/Jan/2024 14:07:32] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:07:34] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+2024/01/30 14:07:34 - INFO - 127.0.0.1 - - [30/Jan/2024 14:07:34] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:08:42 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:08:42 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:08:45 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:08:45 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:08:45 - INFO -  * Debugger PIN: 145-038-903
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:08:51 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:08:51 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:08:53 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:08:53 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:08:53 - INFO -  * Debugger PIN: 145-038-903
+INFO:app:[GET] /thk1
+2024/01/30 14:09:02 - INFO - [GET] /thk1
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:09:02] "GET /thk1 HTTP/1.1" 200 -
+2024/01/30 14:09:02 - INFO - 127.0.0.1 - - [30/Jan/2024 14:09:02] "GET /thk1 HTTP/1.1" 200 -
+INFO:app:[GET] /thinking_power1_video_feed
+2024/01/30 14:09:02 - INFO - [GET] /thinking_power1_video_feed
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:09:02] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+2024/01/30 14:09:02 - INFO - 127.0.0.1 - - [30/Jan/2024 14:09:02] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:09:04] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+2024/01/30 14:09:04 - INFO - 127.0.0.1 - - [30/Jan/2024 14:09:04] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:10:28 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:10:29 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:10:32 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:10:32 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:10:32 - INFO -  * Debugger PIN: 145-038-903
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:10:50 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:10:50 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:10:53 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:10:53 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:10:53 - INFO -  * Debugger PIN: 145-038-903
+INFO:app:[GET] /thk1
+2024/01/30 14:10:56 - INFO - [GET] /thk1
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:10:56] "GET /thk1 HTTP/1.1" 200 -
+2024/01/30 14:10:56 - INFO - 127.0.0.1 - - [30/Jan/2024 14:10:56] "GET /thk1 HTTP/1.1" 200 -
+INFO:app:[GET] /thinking_power1_video_feed
+2024/01/30 14:10:56 - INFO - [GET] /thinking_power1_video_feed
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:10:56] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+2024/01/30 14:10:56 - INFO - 127.0.0.1 - - [30/Jan/2024 14:10:56] "[36mGET /static/hamhand.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Jan/2024 14:10:57] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+2024/01/30 14:10:57 - INFO - 127.0.0.1 - - [30/Jan/2024 14:10:57] "GET /thinking_power1_video_feed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:11:33 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:11:34 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:11:36 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:11:36 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:11:36 - INFO -  * Debugger PIN: 145-038-903
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:11:41 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+INFO:werkzeug: * Restarting with stat
+2024/01/30 14:11:41 - INFO -  * Restarting with stat
+INFO:app:server on :: PORT=5000
+2024/01/30 14:11:44 - INFO - server on :: PORT=5000
+WARNING:werkzeug: * Debugger is active!
+2024/01/30 14:11:44 - WARNING -  * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 145-038-903
+2024/01/30 14:11:44 - INFO -  * Debugger PIN: 145-038-903
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading
+2024/01/30 14:12:13 - INFO -  * Detected change in 'C:\\Users\\user\\Documents\\BigData\\Image_Project\\Genie_Finger\\tools\\ham.py', reloading

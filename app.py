@@ -122,4 +122,4 @@ PORT = 5000
 
 if __name__ == '__main__':
     app.logger.info("server on :: PORT="+str(PORT))
-    app.run(debug=True, port=PORT)
+    app.run('0.0.0.0', port=PORT)
